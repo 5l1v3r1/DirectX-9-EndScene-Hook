@@ -1,5 +1,7 @@
 #include "hook.h"
 
+static HWND window;
+
 BOOL CALLBACK EnumWindowsCallback(HWND handle, LPARAM lParam)
 {
 	DWORD wndProcId;

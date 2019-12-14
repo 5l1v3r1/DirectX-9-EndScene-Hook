@@ -6,4 +6,3 @@ HWND GetProcessWindow();
 bool GetD3D9Device(void** pTable, size_t Size);
 bool Hook(char* src, char* dst, int len);
 char* TrampHook(char* src, char* dst, unsigned int len);
-static HWND window;
