@@ -18,15 +18,15 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="directx_hook.cpp">
+    <ClCompile Include="hook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="directx_hook.h">
+    <ClInclude Include="includes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="includes.h">
+    <ClInclude Include="hook.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
