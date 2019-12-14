@@ -30,13 +30,5 @@ BOOL WINAPI DllMain(HMODULE hMod, DWORD dwReason, LPVOID lpReserved)
 		CreateThread(nullptr, 0, MainThread, hMod, 0, nullptr);
 	}
 
-	else if (dwReason == DLL_PROCESS_DETACH)
-	{
-		DetourTransactionBegin();
-		DetourUpdateThread(GetCurrentThread());
-		DetourDetach(&(LPVOID&)endSceneAddr, &hkEndScene);
-		DetourTransactionCommit();
-	}
-
 	return TRUE;
 }
